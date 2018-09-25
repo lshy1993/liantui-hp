@@ -33,7 +33,9 @@
             </select>
         </div>
     </header>
-    <router-view id="mainContent"/>
+    <transition enter-active-class="animated fadeIn" >
+        <router-view class="content" id="mainContent"></router-view>
+    </transition>
 </div>
 </template>
 
@@ -44,6 +46,8 @@ export default {
 </script>
 
 <style>
+@import '../node_modules/animate.css/animate.min.css';
+
 body {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     background: #e3e3e3;
@@ -140,4 +144,25 @@ a {
     background: #e3e3e3;
     width: 100%;
 }
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    min-height: calc(100vh - 150px)
+}
+
+
+/* 路由切换动画 */ 
+.fade-enter, .fade-leave-active {
+    opacity: 0
+}
+.fade-enter-active, .fade-leave {
+    opacity: 1
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
 </style>
