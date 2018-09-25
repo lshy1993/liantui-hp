@@ -83,7 +83,6 @@ a {
     width: 100%;
     height: auto;
     background: transparent;
-    background: white;
     z-index: 1010;
 }
 #navBtnList {
