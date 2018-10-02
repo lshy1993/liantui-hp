@@ -45,9 +45,7 @@ export default {
 }
 </script>
 
-<style>
-@import '../node_modules/animate.css/animate.min.css';
-
+<style lang="scss">
 body {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     background: #e3e3e3;
@@ -129,6 +127,7 @@ a {
 
 #mainContent {
     text-align: center;
+    height: auto;
 }
 
 #nav a {
@@ -164,5 +163,11 @@ a {
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease;
 }
+
+</style>
+
+<style>
+@import '../node_modules/animate.css/animate.min.css';
+
 
 </style>
