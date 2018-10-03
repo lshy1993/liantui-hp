@@ -103,13 +103,17 @@ a {
     margin: 0 20px;
     text-align: center;
     transition: background-color .2s ease-in-out 0s;
+    // color:#e3e3e3;
 }
 .navBtn:hover {
+    // background: #CC3333;
     background: pink;
 }
 .navBtn:hover > .underline {
     width: 100%;
 }
+
+
 
 .underline {
     margin-top: 3px; 
@@ -136,6 +140,7 @@ a {
 }
 
 #navTop a.router-link-exact-active {
+    // background: #CC3333;
     background: pink;
 }
 
@@ -148,7 +153,8 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
-    min-height: calc(100vh - 150px)
+    min-height: calc(100vh - 150px);
+    background: url('./assets/img/background.jpg') repeat-y;
 }
 
 
