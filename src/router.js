@@ -32,6 +32,11 @@ export default new Router({
       component: () => import('./views/Character.vue')
     },
     {
+      path: '/hint',
+      name: 'hint',
+      component: () => import('./views/Hint.vue')
+    },
+    {
       path: '/team',
       name: 'team',
       component: () => import('./views/Team.vue')

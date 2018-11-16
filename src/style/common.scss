@@ -1,0 +1,169 @@
+body {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    background: #e3e3e3;
+    margin: 0;
+    padding: 0;
+}
+
+div, dl, dt, dd,
+h1, h2, h3, h4, h5, h6,
+ol, ul, li, p, pre, span, td, th,
+article, aside, canvas, details, figcaption, figure, header,
+footer,hgroup, menu, nav, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+
+// a {
+//     text-decoration: none;
+//     color: black;
+// }
+
+a {
+	text-decoration: none;
+    color: #333;
+    
+    &:hover {
+	    text-decoration: none;
+    }
+}
+
+/*选中色*/
+::selection {
+	color: #FF6178;
+	background: #FFE1EC;;
+}
+::-moz-selection {
+	color: #FF6178;
+	background: #FFE1EC;;
+}
+
+/*清除浮动*/
+.clearfixbox:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.clearfix{
+	float: left;
+}
+    
+.clickable {
+    cursor: pointer;
+}
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+}
+
+#navTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    z-index: 1010;
+}
+#navBtnList {
+    display: inline-block;
+    position: relative;
+    padding-left: 100px;
+    width: 100%;
+}
+
+.navBtn {
+    min-width: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 20px;
+    text-align: center;
+    transition: background-color .2s ease-in-out 0s;
+    // color:#e3e3e3;
+}
+.navBtn:hover {
+    // background: #CC3333;
+    background: pink;
+}
+.navBtn:hover > .underline {
+    width: 100%;
+}
+
+
+
+.underline {
+    margin-top: 3px; 
+    height: 10px;
+    width: 0%;
+    transition: background-color .2s ease-in-out 0s;
+    transition: width .2s;
+}
+
+#optionBox {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+// #mainContent {
+//     text-align: center;
+//     height: auto;
+// }
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#navTop a.router-link-exact-active {
+    // background: #CC3333;
+    background: pink;
+}
+
+#navTop a.router-link-exact-active > .underline {
+    background: #e3e3e3;
+    width: 100%;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    min-height: calc(100vh - 150px);
+    background-image: url('/assets/img/background.jpg') repeat-y;
+}
+
+.simpleIntroBox {
+    position: relative;
+    background: rgba(255,255,255,0.8);
+	width: 980px;
+	min-height: 720px;
+	display: block;
+
+    h1 {
+        text-align: right;
+        padding-right: 20px;
+        font-size: 32px;
+    }
+
+    .mainSummary {
+        padding: 10px 50px 30px;
+        h2 {
+            padding: 10px 0;
+        }
+        h3 {
+            padding: 5px 10px;
+        }
+        li {
+            padding: 5px 20px;
+        }
+    }
+}

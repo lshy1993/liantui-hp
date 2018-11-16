@@ -6,6 +6,9 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
+import './style/common.scss';
+import './style/transition.scss';
+
 new Vue({
   router,
   store,
