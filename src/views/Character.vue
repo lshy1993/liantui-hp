@@ -6,6 +6,8 @@
 	<div id="info">
 		<h1>This is a character page</h1>
 	</div>
+	<input type="textbox" >
+	<input type="submit">
 </div>
 </template>
 
