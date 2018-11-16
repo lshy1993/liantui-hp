@@ -20,7 +20,7 @@ export default {
 			charaDic: [
 				{
 					name_CN: "苏梦忆",
-					photoFile: "su00_1.png",
+					photoFile: require("../assets/img/su00_1.png"),
 					color: 'pink',
 					pos: {
 						x: 10,
@@ -30,7 +30,7 @@ export default {
 				},
 				{
 					name_CN: "西门吹",
-					photoFile: "su00_1.png",
+					photoFile: require("../assets/img/su00_1.png"),
 					color: 'orange',
 					pos: {
 						x:400,
@@ -40,7 +40,7 @@ export default {
 				},
 				{
 					name_CN: "喵星人",
-					photoFile: "su00_1.png",
+					photoFile: require("../assets/img/su00_1.png"),
 					color: 'green',
 					pos: {
 						x:200,
@@ -65,7 +65,7 @@ export default {
 	width: 60%;
 	height: 700px;
 	overflow: hidden;
-	background: white;
+	// background: white;
 }
 #info {
 	float: left;

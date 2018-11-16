@@ -21,7 +21,9 @@ export default {
     },
     computed:{
         imgurl: function(){
-            return 'url(../assets/' + this.chara.photoFile+')';
+            return this.chara.photoFile
+            // return require('../assets' + this.chara.photoFile);
+            // return 'url(../assets/' + this.chara.photoFile+')';
         }
     },
     methods: {
